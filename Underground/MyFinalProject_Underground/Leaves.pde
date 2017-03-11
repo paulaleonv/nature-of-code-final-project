@@ -1,3 +1,4 @@
+//creating leaves to display over the try. I am not using them yet
 class Leaves {
   float lPosX;
   float lPosY;
@@ -7,8 +8,6 @@ class Leaves {
   float lColB;
   float lColA;
 
-  
-  
    Leaves (float lX,float lY, float lS, float lCR, float lCG, float lCB, float lCA) {
     lPosX=lX;
     lPosY=lY;
@@ -17,14 +16,12 @@ class Leaves {
     lColG=lCG;
     lColB=lCB;
     lColA=lCA;
-   
-       
+        
    }
-  
   
   void display () {
     
-    strokeWeight(1);
+      strokeWeight(1);
       stroke(lColR,lColG,lColB,lColA);
       fill(lColR,lColG,lColB,lColA);
       beginShape();
@@ -34,15 +31,7 @@ class Leaves {
       vertex(lPosX,lPosY);
       bezierVertex(lPosX,lPosY,lPosX-6,lPosY+6,lPosX,lPosY+12);
       endShape();
-      
-    
-    
-    
-    
+        
   }
-  
-  
-  
-  
-  
+   
 }

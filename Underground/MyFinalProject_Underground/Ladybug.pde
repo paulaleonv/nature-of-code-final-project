@@ -1,3 +1,4 @@
+//Ladybug character
 class Ladybug {
    PVector position;
    PVector velocity;
@@ -15,28 +16,30 @@ class Ladybug {
        G=0.4;    
     } //end of constructor;
     
-    //question about how to call the scorpio here
+    // Question: I Tried to create here an attractor to create attraction between ladybug and the scopio. 
+    //I wanted ladybug to be the attractor. But I could not find out how to call the Scorpio arguments here
+  
     //PVector attract(Scorpio sAttract) {
-     // PVector force= PVector.sub(position, sAttract.position);
-      //float distance= force.mag();
-     // distance= constrain(distance, 5.0, 25.0);
+    // PVector force= PVector.sub(position, sAttract.position);
+    //float distance= force.mag();
+    // distance= constrain(distance, 5.0, 25.0);
       
-     // force.normalize();
-      //float strength= G*mass * s.mass)/ (distance*distance);
-      //force.mult(strength);
-      //return force;
+    // force.normalize();
+    //float strength= G*mass * s.mass)/ (distance*distance);
+    //force.mult(strength);
+    //return force;
       
     //}//end of attract Pvector
     
   //x=250;
   //y=250;
-  void update() {
-  position.add(velocity);
-    
-  }
   
-    void display () {
-     
+  //creating a simple movement for ladybug
+  void update() {
+  position.add(velocity);  
+  }
+  //displaying function for Ladybug
+    void display () {    
       //the body of ladubug
       fill (255,0,0);
       float CirclesSize= radio/6;
@@ -63,7 +66,7 @@ class Ladybug {
       line (position.x, position.y, position.x-radio/3.5,position.y-radio/3.5);
       line (position.x, position.y, position.x+radio/3.5,position.y-radio/3.5);
     }
- 
+    //simple function to check edges
     void checkEdges(){
       if (position.x>width){
         position.x=0;
@@ -76,9 +79,7 @@ class Ladybug {
       } else if (position.y<0) {
        position.y =height; 
      
-      }
-    
-    
+      }   
   }
   //end of checkedges
   

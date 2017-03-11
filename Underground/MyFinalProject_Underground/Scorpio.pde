@@ -1,3 +1,4 @@
+//Scorpio character
 class Scorpio {
    
      PVector ePos;
