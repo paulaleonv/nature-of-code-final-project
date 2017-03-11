@@ -15,10 +15,9 @@ This draw is a static/hand made inspiration of what I would like to create in di
 I get inspired also from sketches that I found in open processing and in the book Nature of Code of Daniel Shiffman.
 
 For Tree and Roots:
-
 Ryan Chon: https://www.openprocessing.org/sketch/158950
 Barbara Almeida: https://www.openprocessing.org/sketch/184276
 Barbara Almeida: https://www.openprocessing.org/sketch/313654
-From the book Nature of code, page  381.
+Daniel Shiffman Nature of Code Exercise_8_06_Tree (Recursive Tree)
 For Mountains:
 Barbara Almeida: https://www.openprocessing.org/sketch/179401
